@@ -8,7 +8,7 @@ const ListCards = () => {
     useEffect(() => {
     const getUsuarios = async () => {
         try {  
-            const res = await fetch ("https://randomuser.me/api/?results=4")
+            const res = await fetch ("https://randomuser.me/api/?results=50")
             const data = await res.json ()
             //console.log(data.results)
             setcelebr (data.results)  
